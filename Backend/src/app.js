@@ -18,6 +18,12 @@ import todoRouter from "./router/todo.route.js"
 
 app.use("/api/v1/users",userRouter)
 app.use("/api/v1/todos",todoRouter)
+app.get("/", (req,res) => {
+    res.send({
+        Active:true,
+        live:true
+    })
+})
 
 
 export {app}
