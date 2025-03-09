@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Header from './components/pages/Header/Header.js'
+import Header from './components/pages/Header/Header.jsx'
 import {Outlet} from "react-router-dom"
 import { useDispatch} from "react-redux"
 import { getProfileData } from './components/store/slice/user/user.thunk.js'
