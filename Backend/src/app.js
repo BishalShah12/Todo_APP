@@ -6,8 +6,9 @@ const app = express()
 
 app.use(cors(
     {
-        origin:"https://todo-app-i3dc.vercel.app/login",
+        origin:"https://todo-app-i3dc.vercel.app",
         credentials:true,
+        methods:["POSt","GET","PUT"]
     }
 ))
 app.use(express.json())
