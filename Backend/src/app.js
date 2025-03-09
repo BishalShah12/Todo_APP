@@ -6,6 +6,7 @@ const app = express()
 
 app.use(cors({
     origin:["http://localhost:5173","https://todo-app-zvxr.vercel.app"],
+    methods:["GET","POST","PUT"],
     credentials:true
 }))
 app.use(express.json())
