@@ -10,11 +10,18 @@
     "routes": [
      {
       "src": "/(.*)",
-      "dest": "src/index.js",
-      "methods":["POST","PUT","DELETE","GET",""],
-      "headers": {
-        "Access-Control-Allow-Origin":"*"
-      }
+      "dest": "src/index.js", 
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "https://todo-app-i3dc.vercel.app/" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,DELETE" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" },
+        { "key": "Access-Control-Allow-Credentials", "value": "true" } 
+      ]
+    }
+  ]
      }
     ]
    }
