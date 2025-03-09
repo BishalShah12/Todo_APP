@@ -7,7 +7,7 @@ export const loginUserThunk = createAsyncThunk("user/loginpage", async(
     {rejectWithValue}
 ) => {
     try {
-        const response =  await axiosInstance.post("users/login",{
+        const response =  await axiosInstance.post("/users/login",{
             username,
             password,
         })
@@ -25,7 +25,7 @@ export const logoutThunk = createAsyncThunk("user/logout", async(
     {rejectWithValue}
 ) => {
     try {
-        const response =  await axiosInstance.post("users/logout")
+        const response =  await axiosInstance.post("/users/logout")
        return response.data
        
     } catch (error) {
@@ -85,7 +85,7 @@ export const AllTodo = createAsyncThunk("todos/getAllTodo", async(_,{rejectWithV
 
 export const deleteTodo = createAsyncThunk("todos/delete", async(id, {rejectWithValue}) => {
     try {
-        const response = await axiosInstance.delete(`todos/deleteTodo/${id}`)
+        const response = await axiosInstance.delete(`/todos/deleteTodo/${id}`)
         console.log(response);
         
     } catch (error) {
@@ -97,7 +97,7 @@ export const editTodo = createAsyncThunk("todos/edit", async(data, {rejectWithVa
     try {
         console.log("new data",data);
         
-        const response = await axiosInstance.put(`todos/updateTodo/${data._id}`,data)
+        const response = await axiosInstance.put(`/todos/updateTodo/${data._id}`,data)
         console.log('edit ', response);
         
     } catch (error) {
