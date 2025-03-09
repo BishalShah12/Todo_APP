@@ -5,8 +5,8 @@ export const axiosInstance = axios.create({
     baseURL: DB_URL,
     withCredentials:true,
     headers: {
-        'Content-Type': 'application/json'
-    }
-
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer token' // If applicable
+      }
   });
 
