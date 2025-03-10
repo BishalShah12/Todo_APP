@@ -6,7 +6,7 @@ const app = express()
 
 app.use(cors(
     {
-        origin: ['http://localhost:5173','https://todo-app-1r4z.vercel.app/'], 
+        origin: ['http://localhost:5173','https://voluble-bublanina-c048f9.netlify.app/'], 
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
         allowedHeaders: ['Content-Type', 'Authorization'],
         credentials: true
