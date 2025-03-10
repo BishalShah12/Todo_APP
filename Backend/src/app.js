@@ -6,7 +6,7 @@ const app = express()
 
 app.use(cors(
     {
-        origin: "*", 
+        origin: "https://todo-app-bfcf-git-main-bishals-projects-27472993.vercel.app", 
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
         allowedHeaders: ['Content-Type', 'Authorization'],
         credentials: true
