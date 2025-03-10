@@ -6,7 +6,7 @@ const app = express()
 
 app.use(cors(
     {
-        origin: 'https://todo-app-i3dc.vercel.app', 
+        origin: ['http://localhost:5173','https://todo-app-i3dc.vercel.app'], 
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
         allowedHeaders: ['Content-Type', 'Authorization'],
         credentials: true

@@ -48,7 +48,7 @@ const SignUpPage = () => {
         <div className="space-y-6">
           <h1 className="text-3xl font-bold">Create your account</h1>
           <p className="text-gray-600">
-            Have an account? <Link to="/simple2" className="text-blue-600">Log in now</Link>
+            Have an account? <Link to="/login" className="text-blue-600">Log in now</Link>
           </p>
 
           <div className="space-y-4">
