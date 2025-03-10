@@ -10,7 +10,7 @@ app.use(cors(
             'http://localhost:5173',
             'https://voluble-bublanina-c048f9.netlify.app',
             'https://todo-app-1r4z.vercel.app',
-            "https://todo-app-qrne.vercel.app"
+            "https://todo-app-162o.vercel.app/"
         ], 
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
         allowedHeaders: ['Content-Type', 'Authorization'],
