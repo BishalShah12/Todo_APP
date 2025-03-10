@@ -9,10 +9,10 @@ import {verifyJWT} from "../middleware/auth.middleware.js"
 
 const router = Router()
 
-router.route("/addTodo").post(verifyJWT,addTodo)
-router.route("/getAllTodo").get(verifyJWT, getAllTodo)
-router.route("/updateTodo/:id").put(verifyJWT, updateTodo)
-router.route("/deleteTodo/:id").delete(verifyJWT,deleteTodo)
+router.route("/addTodo").post(addTodo)
+router.route("/getAllTodo").get( getAllTodo)
+router.route("/updateTodo/:id").put(updateTodo)
+router.route("/deleteTodo/:id").delete(deleteTodo)
  
 
 
