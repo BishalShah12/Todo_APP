@@ -5,7 +5,7 @@ import { axiosInstance } from './axios/axiosInstance'
 function App() {
   const [data, setData] = useState(0)
   try {
-    const response = axiosInstance("https://todo-app-theta-jet-14.vercel.app/api/v1/todos/getAllTodo").then((res) => {
+    const response = axiosInstance("/todos/getAllTodo").then((res) => {
       return setData(res.data.data.allTodo)
     })
     console.log(response);
