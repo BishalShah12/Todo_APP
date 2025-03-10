@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {useSelector, useDispatch} from "react-redux"
-import { logoutThunk } from '../../store/slice/user/user.thunk';
+import { logoutThunk } from '../../store/slice/user/user.thunk.js';
 import LoginPage from '../../User/LogInPage.jsx';
 
 const Header = () => {
